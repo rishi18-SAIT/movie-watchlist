@@ -1,5 +1,6 @@
 # movie-watchlist
-🎬 Movie-Watchlist App
+
+🎬Movie-Watchlist App
 
 A React.js web application to manage your movie watchlist and track movies you've watched. This app allows you to search movies via the OMDb API, add them to your watchlist, mark them as watched, and manage your movie collection with a modern, responsive UI.
 
@@ -34,30 +35,24 @@ Persistence: LocalStorage
 Styling: CSS (Flexbox & Grid for layout, hover effects)
 
 📂 Folder Structure
-movie-watchlist/
-│
-├─ src/
-│  ├─ components/
-│  │   ├─ MovieCard.jsx
-│  │   ├─ AddMovie.jsx
-│  │   └─ MovieControls.jsx
-│  │
-│  ├─ context/
-│  │   └─ MovieContext.jsx
-│  │
-│  ├─ pages/
-│  │   ├─ Home.jsx
-│  │   ├─ Watchlist.jsx
-│  │   └─ Watched.jsx
-│  │
-│  ├─ utils/
-│  │   ├─ api.js
-│  │   └─ localStorage.js
-│  │
-│  ├─ App.jsx
-│  ├─ index.js
-│  └─ App.css
-
+Folder / File	Description
+src/	Main source folder containing all React code
+src/components/	Reusable React components
+src/components/MovieCard.jsx	Card component for each movie
+src/components/AddMovie.jsx	Component to search and add movies
+src/components/MovieControls.jsx	Buttons for adding/removing/moving movies
+src/context/	React Context for global state management
+src/context/MovieContext.jsx	Context and reducer for managing watchlist/watched movies
+src/pages/	Page components for routing
+src/pages/Home.jsx	Homepage displaying all movies
+src/pages/Watchlist.jsx	Watchlist page for movies to watch
+src/pages/Watched.jsx	Watched page for movies already watched
+src/utils/	Utility functions
+src/utils/api.js	API functions to fetch movies from OMDb API
+src/utils/localStorage.js	Functions to load/save data from LocalStorage
+src/App.jsx	Main app component with routing
+src/index.js	Entry point of the React app
+src/App.css	Global styles for the app
 🚀 Getting Started
 Prerequisites
 
@@ -94,13 +89,9 @@ Open http://localhost:3000
 
 The app uses OMDb API to fetch movie details.
 
-Replace the API key in utils/api.js if needed:
+Replace the API key in src/utils/api.js if needed:
 
 const API_KEY = "YOUR_OMDB_API_KEY";
-
-🎨 Screenshots
-
-(Optional: You can add images of your app here for better presentation)
 
 👨‍💻 Author
 
