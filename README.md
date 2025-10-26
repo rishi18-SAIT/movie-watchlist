@@ -1,6 +1,5 @@
 # movie-watchlist🎬
 
-🎬 Movie-Watchlist App
 A React.js web application to manage your movie watchlist and track movies you've watched. This app allows you to search movies via the OMDb API, add them to your watchlist, mark them as watched, and manage your movie collection with a modern, responsive UI.
 
 Live Demo: https://rishikesh-movie-watchlist.netlify.app
