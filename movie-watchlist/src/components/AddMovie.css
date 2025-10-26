@@ -1,0 +1,114 @@
+.add-movie {
+  max-width: 450px;
+  margin: 4rem auto 2rem; /* bottom margin for spacing */
+  background: #1f2937;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.add-movie h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #38bdf8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Form styling */
+.add-movie form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input fields */
+.add-movie input {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #374151;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-movie input:focus {
+  background-color: #4b5563;
+  transform: scale(1.02);
+}
+
+/* Submit button */
+.add-movie button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-movie button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Horizontal scroll container for movie cards */
+.movie-grid-container {
+  overflow-x: auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+/* Movie cards row */
+.movie-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap; /* keep horizontal row */
+}
+
+/* Hide scroll bar for webkit browsers */
+.movie-grid-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.movie-grid-container::-webkit-scrollbar-thumb {
+  background-color: #2563eb;
+  border-radius: 3px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 500px) {
+  .add-movie {
+    padding: 2rem 1.5rem;
+    margin: 3rem 1rem 2rem;
+  }
+
+  .add-movie h2 {
+    font-size: 1.8rem;
+  }
+
+  .add-movie input,
+  .add-movie button {
+    font-size: 0.95rem;
+  }
+
+  .movie-grid-container {
+    padding: 0.5rem;
+  }
+}

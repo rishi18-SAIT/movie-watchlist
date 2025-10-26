@@ -1,0 +1,33 @@
+.home {
+text-align: center;
+margin-top: 3rem;
+color: white;
+}
+
+
+.home-links {
+margin-top: 2rem;
+display: flex;
+justify-content: center;
+gap: 1rem;
+}
+
+
+.btn {
+background: #2563eb;
+color: white;
+padding: 0.6rem 1.2rem;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 500;
+}
+
+
+.btn.add {
+background: #10b981;
+}
+
+
+.btn:hover {
+opacity: 0.85;
+}

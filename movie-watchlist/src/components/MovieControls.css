@@ -1,0 +1,26 @@
+.movie-controls {
+display: flex;
+justify-content: space-around;
+padding: 0.5rem;
+}
+
+
+.btn {
+background: #2563eb;
+border: none;
+color: white;
+padding: 0.4rem 0.7rem;
+border-radius: 5px;
+cursor: pointer;
+font-size: 0.8rem;
+}
+
+
+.btn.remove {
+background: #dc2626;
+}
+
+
+.btn:hover {
+opacity: 0.85;
+}
